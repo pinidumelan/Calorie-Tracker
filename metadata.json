@@ -1,0 +1,7 @@
+{
+  "name": "NutriVision AI",
+  "description": "An intelligent calorie and nutrition checker. Upload an image of your meal, and our AI will provide a detailed nutritional breakdown, including calories, macros, and vitamins.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
