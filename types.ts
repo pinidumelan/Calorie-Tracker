@@ -1,31 +1,20 @@
-export interface User {
-  email: string;
-}
-
-export interface MacroNutrient {
-  total: number;
-  unit: string;
-}
-
-export interface Vitamin {
-  name: string;
-  amount: string;
-}
 
 export interface NutritionInfo {
   foodName: string;
-  servingSize: string;
   calories: number;
-  fat: MacroNutrient;
-  carbohydrates: MacroNutrient;
-  protein: MacroNutrient;
-  vitamins: Vitamin[];
+  protein: number;
+  carbohydrates: {
+    total: number;
+    sugar: number;
+    fiber: number;
+  };
+  fat: {
+    total: number;
+    saturated: number;
+  };
+  servingSize: string;
 }
 
-export type MealType = 'Breakfast' | 'Lunch' | 'Dinner' | 'Snack';
-
-export interface TrackedMeal extends NutritionInfo {
-  id: string; // unique id for each entry
-  date: string; // ISO date string YYYY-MM-DD
-  mealType: MealType;
+export interface NutritionError {
+  error: string;
 }

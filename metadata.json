@@ -1,7 +1,5 @@
 {
-  "name": "NutriVision AI",
-  "description": "An intelligent calorie and nutrition checker. Upload an image of your meal, and our AI will provide a detailed nutritional breakdown, including calories, macros, and vitamins.",
-  "requestFramePermissions": [
-    "camera"
-  ]
+  "name": "NutriSnap - Calorie Tracker",
+  "description": "An AI-powered calorie and nutrition tracker. Upload an image of your food, and Gemini will analyze it to provide detailed nutritional facts, including calories, protein, carbs, and fats.",
+  "requestFramePermissions": []
 }
